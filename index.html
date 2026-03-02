@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albania Secret - Guía Interactiva de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🇦🇱 ALBANIA SECRET</h1>
+                <p>Tu Asistente Virtual para Planificar el Viaje Perfecto</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Guide Section -->
+            <section class="guide-section">
+                <h2>El Último Tesoro de Europa</h2>
+                <p>Descubre Albania: 7 días por menos de €500 con secretos locales y experiencias auténticas.</p>
+                
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <h3>✈️ Vuelos desde Alemania</h3>
+                        <p>Berlín, Múnich, Fráncfort - 2h 30m de vuelo</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>💰 Presupuesto €37/día</h3>
+                        <p>Alojamiento, comida y transporte incluido</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>🗺️ 7 Destinos</h3>
+                        <p>Tirana, Berat, Gjirokastër y playas paradisíacas</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chatbot Section -->
+            <section class="chatbot-section">
+                <h2>🤖 Asistente de Viajes Albania</h2>
+                <p>Cuéntame sobre tu viaje y te crearé un itinerario personalizado</p>
+                
+                <div class="chatbot-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <p>¡Hola! 👋 Soy tu asistente de viajes de Albania. Voy a ayudarte a crear el itinerario perfecto.</p>
+                            <p>Respondamos algunas preguntas:</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <input type="text" id="userInput" placeholder="Escribe tu respuesta aquí..." class="chat-input">
+                        <button onclick="sendMessage()" class="send-btn">Enviar</button>
+                    </div>
+                </div>
+
+                <!-- Quick Questions -->
+                <div class="quick-questions">
+                    <p><strong>Preguntas rápidas:</strong></p>
+                    <button onclick="askQuestion('¿Cuántos días tengo?')">¿Cuántos días?</button>
+                    <button onclick="askQuestion('¿Cuál es mi presupuesto?')">¿Mi presupuesto?</button>
+                    <button onclick="askQuestion('¿Qué tipo de viaje?')">¿Tipo de viaje?</button>
+                    <button onclick="askQuestion('Crear itinerario')">Crear itinerario</button>
+                </div>
+            </section>
+
+            <!-- Itinerary Display -->
+            <section class="itinerary-section" id="itinerarySection" style="display:none;">
+                <h2>Tu Itinerario Personalizado</h2>
+                <div id="itineraryContent"></div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Albania Secret. Guía de Viajes Auténticos | Viajes Responsables</p>
+        </footer>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
